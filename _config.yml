@@ -1,0 +1,39 @@
+title: "BASICS"
+email: hello@babb.tel
+description: >-
+  A commitments framework and conformance baseline for building interoperable
+  business tools that operate under constrained conditions and long product lifecycles.
+baseurl: ""
+url: "https://basics.babb.tel"
+twitter_username: babbworks
+github_username: babbworks
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  navigation:
+    - title: "Standard"
+      url: "/standard"
+    - title: "Conformance"
+      url: "/conformance"
+    - title: "Governance"
+      url: "/governance"
+    - title: "Participate"
+      url: "/participate"
+    - title: "babb.tel"
+      url: "https://babb.tel"
+
+paginate: 12
+paginate_path: "/updates/page:num/"
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/

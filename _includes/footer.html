@@ -1,0 +1,84 @@
+<div class="site-footer-wrap" role="contentinfo">
+  <button class="footer-tab" id="footer-toggle" aria-expanded="false" aria-controls="footer-drawer">
+    <span class="tab-label">BASICS</span>
+    <span class="tab-mono">v0.1.1</span>
+    <span class="tab-label">&middot;</span>
+    <span class="tab-mono">hello@babb.tel</span>
+    <span class="tab-label">&middot;</span>
+    <span class="tab-label">Built by Babb</span>
+    <span class="tab-arrow" aria-hidden="true">↑</span>
+  </button>
+
+  <div class="footer-drawer" id="footer-drawer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <h4>Standard</h4>
+          <ul>
+            <li><a href="/standard">Overview</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/shared-core.md">Shared Core</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/software-profile.md">Software Profile</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/hardware-profile.md">Hardware Profile</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/firmware-profile.md">Firmware Profile</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/rule-index.md">Rule Index</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Conformance</h4>
+          <ul>
+            <li><a href="/conformance">Tiers &amp; Checklist</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/conformance-checklist.md">Checklist (raw)</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/deviation-registry.md">Deviation Registry</a></li>
+            <li><a href="/governance">Governance</a></li>
+            <li><a href="/participate">Participate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Updates</h4>
+          <ul>
+            {% for post in site.posts limit:7 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+          <a href="/updates" style="display:block;margin-top:10px;font-size:0.72rem;color:rgba(180,200,230,0.7);text-decoration:none">All updates →</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Babb</h4>
+          <ul>
+            <li><a href="https://babb.tel">babb.tel</a></li>
+            <li><a href="mailto:hello@babb.tel">hello@babb.tel</a></li>
+            <li><a href="https://github.com/babbworks">GitHub</a></li>
+            <li><a href="https://github.com/babbworks/BASICS-standard/discussions">Discussions</a></li>
+          </ul>
+          <h4 style="margin-top:16px">Proof Product</h4>
+          <ul>
+            <li><a href="https://workpads.org">workpads.org</a></li>
+            <li><a href="https://standard.workpads.org">Workpads Standard</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>BASICS v0.1.1 &middot; Draft &middot; <a href="/participate#conformance">Conformance &amp; Use</a></span>
+        <span>Built by <a href="https://babb.tel">Babb</a> &middot; <a href="{{ "/feed.xml" | relative_url }}">RSS</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('footer-toggle');
+  var drawer = document.getElementById('footer-drawer');
+  if (!btn || !drawer) return;
+  btn.addEventListener('click', function () {
+    var open = drawer.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>

@@ -1,0 +1,259 @@
+---
+layout: default
+---
+
+<!-- HERO -->
+<section class="home-hero">
+  <div class="wrapper">
+    <p class="hero-kicker">Business Assistance System &middot; v0.1.1 &middot; Draft</p>
+    <h1>A commitments framework<br>for <em>real constraints</em>.</h1>
+    <p class="hero-lead">
+      BASICS is a practical standard for building business tools that operate across
+      unstable conditions, constrained devices, mixed operator skill levels, and
+      long product lifecycles.
+    </p>
+    <p class="hero-sub">
+      It is not a branding layer and not optional philosophy.
+      It is a <strong>commitments framework with testable obligations</strong> —
+      grounded in ISO, IETF, and NIST guidance families.
+    </p>
+    <div class="hero-ctas">
+      <a href="/standard" class="btn btn-primary">Read the Standard</a>
+      <a href="/conformance" class="btn btn-secondary">Conformance</a>
+      <a href="/governance" class="btn btn-secondary">Governance</a>
+      <a href="/updates" class="btn btn-secondary">Updates</a>
+    </div>
+  </div>
+</section>
+
+<!-- ORGANIZING PRINCIPLES -->
+<section class="home-principles">
+  <div class="wrapper">
+    <div class="principles-header">
+      <h2>Organizing Principles</h2>
+      <span class="principles-count">5 principles</span>
+    </div>
+    <div class="principles-grid">
+      <div class="principle-item">
+        <span class="p-num">01</span>
+        <div class="p-body">
+          <h4>Command and control belongs to the operator.</h4>
+          <p>Tools must expose stable, documented command surfaces. The operator — not the platform — decides what happens.</p>
+        </div>
+      </div>
+      <div class="principle-item">
+        <span class="p-num">02</span>
+        <div class="p-body">
+          <h4>Default network of one.</h4>
+          <p>Core record operations work without network dependency. Connectivity is a bonus, not a prerequisite.</p>
+        </div>
+      </div>
+      <div class="principle-item">
+        <span class="p-num">03</span>
+        <div class="p-body">
+          <h4>Interoperability accelerates innovation.</h4>
+          <p>A shared contract reduces integration drag and enables independent tools to compose reliably.</p>
+        </div>
+      </div>
+      <div class="principle-item">
+        <span class="p-num">04</span>
+        <div class="p-body">
+          <h4>Device-constrained deployment is foundational.</h4>
+          <p>Designing for constrained hardware first produces decisions that remain correct at any tier.</p>
+        </div>
+      </div>
+      <div class="principle-item">
+        <span class="p-num">05</span>
+        <div class="p-body">
+          <h4>Open governance with proposal and review.</h4>
+          <p>The standard evolves through a 100-day proposal-to-ratification cycle with community input at every stage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN + SIDEBAR -->
+<div class="wrapper">
+  <div class="home-main">
+    <div class="home-body">
+      <span class="section-num">01 &mdash; Why BASICS Exists</span>
+      <h2>Most tool stacks assume the wrong things.</h2>
+      <p>
+        Most stacks optimize for stable broadband, modern hardware, large teams,
+        and homogeneous deployment. Real operations frequently look different: intermittent
+        connectivity, low-cost devices, mixed digital and paper workflows, fragmented vendors,
+        and teams that need speed without sacrificing data durability.
+      </p>
+      <p>
+        Without a shared standard, teams repeatedly solve the same problems in incompatible ways.
+        The result is integration drag, brittle migrations, and operator lock-in.
+      </p>
+
+      <div class="callout">
+        <p>Organizations do not fail because they lack features. They fail when core records,
+        commands, and workflows become unreliable, opaque, or non-portable across changing constraints.</p>
+      </div>
+
+      <span class="section-num">02 &mdash; Architecture</span>
+      <h2>Layered so you implement what you need.</h2>
+      <p>
+        BASICS uses a layered architecture. Products implement only what their system footprint
+        requires while remaining compatible at the layers they do implement.
+      </p>
+      <p>
+        The <strong>Shared Core</strong> is universal: command surfaces, record operations,
+        interoperability declarations, versioning, and governance. The <strong>Software,
+        Hardware, and Firmware Profiles</strong> add profile-specific obligations for
+        products that cross those boundaries. <strong>Operational Extensions</strong> are
+        registered through formal deviation and conformance pathways.
+      </p>
+
+      <span class="section-num">03 &mdash; Evidence, Not Claims</span>
+      <h2>Conformance is verifiable state, not narrative.</h2>
+      <p>
+        BASICS requires machine-checkable and human-auditable evidence: command and schema specs,
+        ADR history, degraded-mode matrices, tier test outputs, and registered deviations
+        with durable identifiers.
+      </p>
+      <p>
+        The <a href="/conformance">conformance checklist</a> uses a simple model:
+        mandatory controls are pass/fail; optional controls use a maturity score (0–3).
+        This enforces strict minimum guarantees while rewarding gradual hardening.
+      </p>
+    </div>
+
+    <aside class="home-sidebar">
+      <div class="sidebar-box">
+        <h3>Standard Documents</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/shared-core.md">Shared Core Standard</a>
+            <span class="s-meta">v0.1.1 &middot; Draft</span>
+          </li>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/software-profile.md">Software Profile</a>
+            <span class="s-meta">v0.1.1</span>
+          </li>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/hardware-profile.md">Hardware Profile</a>
+            <span class="s-meta">v0.1.1</span>
+          </li>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/firmware-profile.md">Firmware Profile</a>
+            <span class="s-meta">v0.1.1</span>
+          </li>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/rule-index.md">Rule Index</a>
+            <span class="s-meta">Canonical rule ID reference</span>
+          </li>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/standards/deviation-registry.md">Deviation Registry</a>
+            <span class="s-meta">Policy + registry format</span>
+          </li>
+          <li>
+            <a href="https://github.com/babbworks/BASICS-standard/blob/master/ADOPTION.md">Adoption Playbook</a>
+            <span class="s-meta">30-day adoption track</span>
+          </li>
+        </ul>
+        <a href="/standard" class="box-more">Full standard overview →</a>
+      </div>
+
+      <div class="sidebar-box posts-box">
+        <h3>Recent Updates</h3>
+        <ul>
+          {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="p-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        <a href="/updates" class="box-more">All updates &middot; RSS →</a>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Proof Product</h3>
+        <ul>
+          <li>
+            <a href="https://standard.workpads.org">Workpads Standard</a>
+            <span class="s-meta">First BASICS conformant product</span>
+          </li>
+          <li>
+            <a href="https://workpads.org">workpads.org</a>
+            <span class="s-meta">App site</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- CONFORMANCE TIERS -->
+<section class="home-tiers">
+  <div class="wrapper">
+    <h2>Conformance Tiers</h2>
+    <p class="tiers-lead">
+      Conformance is intentional and progressive. Each tier inherits all requirements
+      from lower tiers and may not weaken them.
+    </p>
+    <div class="tiers-grid">
+      <div class="tier-card">
+        <div class="tier-label core">Core</div>
+        <h3>Baseline commitment</h3>
+        <p>Command contract, local record operations, and interoperability declarations. The entry point for any BASICS-conformant product.</p>
+        <ul class="tier-reqs">
+          <li>Command contract published</li>
+          <li>Event schema published</li>
+          <li>Local create/edit without network</li>
+          <li>Compatibility policy published</li>
+          <li>Degraded-mode matrix published</li>
+        </ul>
+      </div>
+      <div class="tier-card">
+        <div class="tier-label field">Field</div>
+        <h3>Constrained operation proof</h3>
+        <p>All Core controls plus evidence of constrained/degraded behavior and conflict/sync reliability. For tools deployed in real field conditions.</p>
+        <ul class="tier-reqs">
+          <li>All Core controls pass</li>
+          <li>Degraded-mode test evidence</li>
+          <li>Conflict comparison contract</li>
+          <li>Sync/conflict status surface</li>
+          <li>Constrained deployment validated</li>
+        </ul>
+      </div>
+      <div class="tier-card">
+        <div class="tier-label industrial">Industrial</div>
+        <h3>Security lifecycle rigor</h3>
+        <p>All Field controls plus security lifecycle evidence, supply-chain transparency, and publishable conformance results reviewed by Babb.</p>
+        <ul class="tier-reqs">
+          <li>All Field controls pass</li>
+          <li>Security lifecycle evidence</li>
+          <li>Supply-chain evidence (SBOM)</li>
+          <li>Publishable conformance results</li>
+          <li>Babb / delegated partner review</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:20px;font-size:0.85rem">
+      <a href="/conformance">Full checklist and scoring model →</a>
+    </p>
+  </div>
+</section>
+
+<!-- PARTICIPATE BAND -->
+<section class="home-participate">
+  <div class="wrapper">
+    <h2>Participate in the Standard</h2>
+    <p>
+      BASICS evolves through proposal, trial implementation, and community review —
+      a targeted 100-day lifecycle from draft to ratification decision. Register deviations,
+      submit proposals, or apply the standard to your product and publish conformance evidence.
+    </p>
+    <div class="participate-links">
+      <a href="/participate" class="btn btn-ghost-dark">How to Participate</a>
+      <a href="https://github.com/babbworks/BASICS-standard/discussions" class="btn btn-ghost-dark">GitHub Discussions</a>
+      <a href="/governance" class="btn btn-ghost-dark">Governance Process</a>
+    </div>
+  </div>
+</section>
